@@ -7,4 +7,5 @@ router.register('Post', views.BlogImages)
 
 urlpatterns = [
     path('api_root/', include(router.urls)),
+       path('', views.post_list, name='post_list'),
 ]
